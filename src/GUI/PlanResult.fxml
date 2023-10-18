@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PlanResultController">
+    <children>
+        <Label layoutX="112.0" layoutY="240.0" text="Votre besoin calorique " />
+      <Label fx:id="txtc" layoutX="303.0" layoutY="240.0" prefHeight="21.0" prefWidth="154.0" text="." />
+    </children>
+</AnchorPane>

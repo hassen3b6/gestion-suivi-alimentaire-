@@ -1,7 +1,7 @@
 package GUI;
 
 import entities.Imc;
-import services.ImcCrud;
+import Services.ImcCrud;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

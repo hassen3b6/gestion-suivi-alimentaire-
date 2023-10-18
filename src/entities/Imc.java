@@ -1,5 +1,7 @@
 package entities;
 
+import java.text.DecimalFormat;
+
 public class Imc {
     private int id;
     private String sexe;
@@ -34,7 +36,7 @@ public class Imc {
     }
 
     public double getPoids() {
-        return poids;
+        return poids; 
     }
 
     public double getIMC() {
@@ -88,7 +90,7 @@ public class Imc {
     public void calculerIMC() {
         double tailleEnM = taille / 100.0;
         IMC = poids / (tailleEnM * tailleEnM);
-
+      
         if (sexe.equalsIgnoreCase("homme")) {
             if (IMC < 18.5) {
                 categorieIMC = "Sous-poids";
@@ -110,8 +112,6 @@ public class Imc {
                 categorieIMC = "Obésité";
             }
         }
-        setIMC(IMC);
-        setCategorieIMC(categorieIMC);
     }
 
     public void calculerPoidsIdeal() {
@@ -122,6 +122,15 @@ public class Imc {
         } else {
             poidsIdeal = null;  // Valeur par défaut en cas de sexe non reconnu
         }
-        setPoidsIdeal(poidsIdeal);
+    }
+
+    public void afficherIMC() {
+        // Formater l'IMC avec deux décimales
+        DecimalFormat df = new DecimalFormat("0.00");
+        String imcFormatted = df.format(IMC);
+
+        // Afficher l'IMC formaté
+        System.out.println("IMC : " + imcFormatted);
     }
 }
+

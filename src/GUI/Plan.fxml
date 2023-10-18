@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PlanController">
-    
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PlanController">
+   <children>
+      <ChoiceBox fx:id="combo_activ" layoutX="494.0" layoutY="180.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="combo_obj" layoutX="487.0" layoutY="243.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="combo_reg" layoutX="487.0" layoutY="324.0" prefWidth="150.0" />
+      <Label layoutX="365.0" layoutY="185.0" prefHeight="21.0" prefWidth="111.0" text="Activite " />
+      <Label layoutX="386.0" layoutY="248.0" text="Objectif" />
+      <Label layoutX="397.0" layoutY="329.0" text="regime" />
+      <Button fx:id="btnobtenir" layoutX="381.0" layoutY="392.0" mnemonicParsing="false" onAction="#obtenirbesoincalorqiues" prefHeight="55.0" prefWidth="251.0" text="Obtenir mon besoin caloriques" />
+      <Label layoutX="399.0" layoutY="121.0" text="Age" />
+      <TextField fx:id="txtage" layoutX="476.0" layoutY="116.0" />
+   </children>
 </AnchorPane>

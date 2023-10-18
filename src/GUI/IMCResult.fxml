@@ -2,23 +2,53 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="454.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.IMCResultController">
+<AnchorPane prefHeight="513.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.IMCResultController">
     <children>
-        <Label layoutX="176.0" layoutY="33.0" style="-fx-font-size: 18pt;" text="Résultats IMC" />
 
-        <Label layoutX="97.0" layoutY="94.0" text="IMC:" />
-        <Label fx:id="txtimc" layoutX="164.0" layoutY="87.0" prefHeight="35.0" prefWidth="186.0" />
+        <Label layoutX="404.0" layoutY="119.0" text="IMC:">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+        <Label fx:id="txtimc" layoutX="543.0" layoutY="121.0" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: #d7e5f4;" />
 
-        <Label layoutX="78.0" layoutY="147.0" text="Catégorie IMC:" />
-        <Label fx:id="txtimc1" layoutX="197.0" layoutY="140.0" prefHeight="35.0" prefWidth="161.0" />
-        <Label fx:id="labelimc" layoutX="197.0" layoutY="217.0" prefHeight="35.0" prefWidth="186.0" />
-        <Label fx:id="txtimc14" layoutX="204.0" layoutY="267.0" prefHeight="35.0" prefWidth="179.0" />
+        <Label layoutX="334.0" layoutY="176.0" text="Catégorie IMC:">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+        <Label fx:id="txtimc1" layoutX="544.0" layoutY="178.0" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #d7e5f4;" />
+        <Label fx:id="labelimc" layoutX="544.0" layoutY="238.0" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #d7e5f4;" />
+        <Label fx:id="txtimc14" layoutX="546.0" layoutY="295.0" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #d7e5f4;" />
 
-        <Button fx:id="btnPlan" layoutX="165.0" layoutY="317.0" mnemonicParsing="false" onAction="#Plan" prefHeight="62.0" prefWidth="202.0" text="Consulter expert de santé" />
-        <Label fx:id="lbl12" layoutX="165.0" layoutY="317.0" prefHeight="62.0" prefWidth="202.0" text="Votre IMC idéal en bonne santé" />
+        <Button fx:id="btnPlan" layoutX="379.0" layoutY="392.0" mnemonicParsing="false" onAction="#Plan" prefHeight="62.0" prefWidth="318.0" style="-fx-background-color: #609de4;" text="Obtenir Plan Alimentaire">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+        <Label fx:id="lbl12" layoutX="410.0" layoutY="392.0" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #609de4;" text="Votre IMC est idéal Vous etes en bonne santé">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Label layoutX="361.0" layoutY="237.0" text="Poids Actuel :">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Label layoutX="377.0" layoutY="293.0" prefHeight="39.0" prefWidth="161.0" text="Poids Ideal :">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <ImageView fitHeight="513.0" fitWidth="305.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="file:///C:/Users/hassen/Desktop/imgFx/[fpdl.in]_homme-design-plat-executant-trackers-fitness_23-2148508679_normal (1).jpg" /> 
+         </image></ImageView>
+      <Label layoutX="368.0" layoutY="28.0" text="Resultat de L'IMC" textFill="#1772e1">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="39.0" />
+         </font>
+      </Label>
 
       
     </children>

@@ -1,4 +1,4 @@
-package services;
+package Services;
 
 import entities.Imc;
 import java.sql.Connection;
